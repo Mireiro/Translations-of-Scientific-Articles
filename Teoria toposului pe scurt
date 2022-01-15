@@ -1,0 +1,86 @@
+Teoria Toposului într-o coajă de nucă/ pe scurt
+John Baez
+10 octombrie 2021
+Bine, vreți să știți ce este un topos? Mai întâi vă voi oferi o explicație vagă, apoi o definiție reală, apoi câteva consecințe ale acestei definiții și apoi câteva exemple. În sfârșit, vă voi spune mai multe lucruri pe care să le citiți.
+Vă avertizez: este nevoie de multă muncă pentru a învăța suficient despre teoria toposului astfel încât să o puteți folosi cu adevărat în rezolvarea problemelor. Astfel, atunci când vă aflați la început, principalul motiv pentru a învăța despre asta nu ar trebui să fie acela de a rezolva rapid unele probleme specifice, ci de a vă lărgi orizonturile și a ieși din cutia pe care matematica tradițională, bazată pe teoria mulțimilor, o impune gândirii dumneavoastră.
+1. Explicația vagă gesticulară 
+În jurul anului 1963, Bill Lawvere a decis să descopere noi fundamente pentru matematică, pe baza teoriei categoriilor. Ideea lui a fost să-și dea seama ce este atât de grozav la mulțimi, strict din punctul de vedere teoretic al categoriilor. Acesta este un proiect interesant, deoarece teoria categoriilor se referă la obiecte și morfisme. Pentru categoria mulțimilor, aceasta înseamnă mulțimi și funcții. Desigur, axiomele obișnuite pentru teoria mulțimilor sunt toate despre mulțimi și apartenență. Astfel, analiza teoriei mulțimilor din punctul de vedere teoretic al categoriei forțează o schimbare radicală a punctului de vedere, care minimizează apartenența și pune accent pe funcții.
+În primăvara anului 1966, Lawvere a întâlnit lucrarea lui Alexander Grothendieck, care inventase un concept de „topos” în lucrarea sa despre geometria algebrică. Cuvântul „topos” înseamnă „loc” în greacă. În geometria algebrică ne interesează adesea nu doar dacă ceva este sau nu adevărat, ci și unde este adevărat. De exemplu, având în vedere două funcții într-un spațiu, unde sunt ele egale? Grothendieck s-a gândit foarte mult la acest lucru și a inventat conceptul lui de topos, acesta fiind aproximativ o categorie care servește drept loc în care se poate face matematică.
+În cele din urmă, acest lucru a condus la un concept de adevăr care are o noțiune foarte generală de „spațiu” încorporată în el!
+Până în 1971, Lawvere și Myles Tierney au preluat conceptul original de topos al lui Grothendieck – numit în prezent un „topos Grothendieck" - l-au generalizat și distilat și au venit cu conceptul de topos despre care voi vorbi aici. Acesta se numește uneori „topos elementar”, pentru a-l deosebi de noțiunea lui Grothendieck... dar adesea se numește doar topos, și asta voi face.
+Deci, ce este un topos?
+Un topos este o categorie cu anumite proprietăți în plus care o fac să semene mult cu categoria mulțimilor. Există multe topoi (pluralul lui topos) diferite; puteți face multe din aceeași matematică în toate; dar există și multe diferențe între ele. De exemplu, axioma alegerii nu trebuie să fie valabilă într-un topos, iar legea mijlocului exclus (cunoscută și ca legea terțului exclus) („fie P sau non(P)”) nu trebuie să fie valabilă. Motivul este că adevărul nu este o chestiune ce ține de da sau nu: în schimb, ținem cont de „cum” sunt afirmațiile adevărate, sau mai precis unde sunt adevărate. Unele, dar nu toate, topoi conțin un „obiect de numere naturale”, care joacă rolul numerelor naturale.
+Dar destul cu gesticulația. Să vedem exact ce este un topos.
+2. Definiție
+Există diverse definiții echivalente ale unui topos, unele mai concise decât altele. Iată una destul de ineficientă:
+Un topos este o categorie cu:
+
+A) limite finite și colimite,
+
+B) exponențiale,
+
+C) un clasificator de subobiecte.
+
+Nu este o definiție prea lungă! Dar ar putea fi și mai scurtă: nu trebuie să menționăm colimitele, deoarece asta rezultă din restul.
+3. Câteva consecințe ale definiției
+Din păcate, dacă nu cunoașteți o teorie a categoriilor, definiția de mai sus va fi misterioasă și va necesita o secvență suplimentară de definiții pentru a o aduce înapoi la conceptele de bază ale teoriei categoriilor - obiect, morfism, compoziție, identitate. În loc să fac toate astea, permiteți-mi să spun puțin despre ce înseamnă aceste elemente A)-C) în categoria mulțimilor:
+A) spune că există:
+* un obiect inițial (un obiect precum mulțimea vidă)
+* un obiect terminal (un obiect precum mulțimea cu un element)
+* coproduse binare (ceva precum reuniunea disjunctă a două mulțimi)
+* produse binare (ceva precum produsul cartezian a două mulțimi)
+* egalizatori (ceva precum submulțimea lui X constând din toate elementele x astfel încât f(x) = g(x), unde f,g: X → Y)
+* coegalizatori (ceva precum mulțimea coeficientului lui X unde sunt identificate două elemente f(y) și g(y) și f,g: Y → X)
+De fapt, A) este echivalent cu toate aceste lucruri. Însă, ar trebui să subliniez că A) spune toate acestea într-un mod elegant unificat; este o teoremă conform căreia acest mod elegant este identic cu toate cele pe care tocmai le-am enumerat.
+
+B) spune că pentru orice obiect X și Y, există un obiect YX, numit „exponențial”, care acționează ca „mulțimea de funcții de la X la Y”.
+
+C) spune că există un obiect numit „clasificator de subobiect”, Ω, care acționează ca mulțimea de două elemente {0,1}. În categoria mulțimilor, folosim {0,1} ca setul nostru de „valori de adevăr”. În special, funcțiile f: X → {0,1} sunt în secret aceleași cu submulțimile lui X. În mod similar, pentru orice obiect X dintr-un topos, morfismele f: X → Ω sunt în secret aceleași cu „subobiectele” lui X.
+
+A afla mai multe despre toate aceste concepte este probabil cea mai bună utilizare a timpului dumneavoastră dacă vreți să învățați puțin teoria toposului. Chiar dacă nu-vă amintiți ce este un topos, aceste concepte vă pot ajuta să deveniți un matematician sau un fizician matematic mai puternic!
+
+4. Exemple
+Să presupunem că sunteți un bătrânel veșnic nemulțumit și doriți să lucrați în toposul Set, unde obiectele sunt mulțimi și morfismele sunt funcții.
+Să presupunem că, cunoașteți grupul de simetrie al universului, G. Și să presupunem că doriți să lucrați numai cu mulțimi asupra cărora acționează acest grup de simetrie și cu funcții care sunt compatibile cu această acțiune de grup. Atunci doriți să lucrați în toposul Set-G.
+Să presupunem că aveți un spațiu topologic care vă place foarte mult. Atunci s-ar putea să doriți să lucrați în topos de presnopi (presheaves)  asupra lui X sau în toposul de snopi (sheaves)  asupra lui X. Snopii (sheaves) sunt importanți în teoria torsorului (twistor theory) și alte aplicații ale geometriei algebrice și topologiei în fizică.
+Generalizând ultimele două exemple, s-ar putea să preferați să lucrați în topos de presnopi (presheaves) pe o categorie arbitrară C, cunoscută și sub numele de hom(Cop, Set).
+De exemplu, dacă C = Δ (categoria mulțimilor nevide, finite, total ordonate), un presnop (presheaf) pe Δ este o mulțime simplă. Topologii algebrici adoră să lucreze cu acestea, iar fizicienii au nevoie de din ce în ce mai multă topologie algebrică în zilele noastre, așa că, pe măsură ce creștem, în cele din urmă merită să învățăm cum să facem topologie algebrică folosind categoria mulțimilor simple, hom(Δop, Set).
+Sau, ați putea dori să lucrați în topos de snopi ( sheaves )pe un spațiu topologic - sau chiar pe un "site", care este o categorie echipată cu ceva asemănător unei topologii. Aceste idei au fost inventate de  Grothendieck  ca parte a strategiei sale de a demonstra conjecturile Weil (Weil conjectures). De fapt, așa a început teoria toposului. Iar puterea acestor idei continuă să crească. De exemplu, în 2002,  Vladimir Voevodsky a câștigat medalia Fields pentru că a rezolvat o problemă faimoasă numită Conjectura lui Milnor (Milnor's Conjecture) cu ajutorul „snopilor simpli” ("simplicial sheaves"). Acestea sunt ca mulțimile simple, dar cu mulțimi înlocuite de snopi pe un site. Din nou, formează un topos. Uau!
+Dar dacă toate acestea sună prea terifiant, nu contează - există și exemple cu o aromă mai „fundamentală”:
+Să presupunem că sunteți un finitist și doriți să lucrați doar cu mulțimi finite. Atunci doriți să lucrați în toposul mulțimilor finite și funcțiile dintre acestea. În teoria toposului, infinitul nu este „încorporat” – este o caracteristică suplimentară pe care o puteți adăuga dacă doriți. 
+Să presupunem că sunteți un constructivist și că doriți să lucrați doar cu mulțimi „constructibile efectiv” și cu funcții „calculabile efectiv”. Atunci doriți să lucrați în „toposul eficient” ("effective topos") dezvoltat de Martin Hyland.
+Să presupunem că vă place să faceți calcule cu infinitezimale, așa cum fac fizicienii tot timpul, dar doriți să le faceți cu rigurozitate. Atunci doriți să lucrați în „toposul neted” ("smooth topos")  dezvoltat de Lawvere și Anders Kock.
+Sau să presupunem că sunteți foarte preocupat de ora din zi și doriți să lucrați cu seturi dependente de timp și funcții dependente de timp între ele. Atunci, există un topos pentru dvs.— nu știu un nume specific pentru el, dar există: un obiect vă oferă o mulțime S(t) pentru fiecare dată t, iar un morfism vă dă o funcție f(t): S (t) → T(t) pentru fiecare dată t. Și asta dă un topos!
+Oamenii merg adesea puțin mai departe și lucrează cu un topos în care un obiect S constă dintr-o mulțime S(t) pentru fiecare dată t și o funcție St,t' : S(t) → S(t') ori de câte ori t ≤ t '. Ideea aici este că, pe măsură ce trece timpul, puteți afla elemente noi în setul dvs. sau puteți afla că două elemente sunt egale, astfel încât să obțineți o hartă de la S(t) la S(t'). Vă las să ghiciți care ar trebui să fie morfismele în acest topos.
+Sunt o mulțime de topoi! Le puteți crea manual pentru nevoile dvs. specifice.
+5. Pentru mai multe informații
+Dacă doriți să aflați mai multe despre teoria toposului, acesta ar putea fi cel mai ușor loc de a începe:
+•	F. William Lawvere și Steve Schanuel, Conceptual Mathematics: A First Introduction to Categories, Cambridge U. Press, Cambridge, 1997.
+Poate părea aproape copilăresc la început, dar treptat se strecoară pe sub pielea dvs.. Schanuel mi-a spus că trebuie să faci exercițiile - dacă nu le faci, la un moment dat cartea va trece dintr-o dată de la a fi prea ușoară la a fi mult prea grea! Dacă stăruiți asupra ei, până la final veți avea sub control toate conceptele de bază din teoria toposului, aproape subconștient.
+După aceea, încercați asta:
+•	F. William Lawvere și Robert Rosebrugh, Sets for Mathematics, Cambridge U. Press, Cambridge, 2003.
+Aceasta este o introducere grozavă în teoria categoriilor prin toposul mulțimilor: descrie teoria obișnuită a mulțimilor în termeni topos-teoretici, clarificând care axiome vor fi abandonate atunci când trecem la topoi mai generali și de ce. Merge mult mai departe decât cartea anterioară și aveți nevoie de ceva mai mult rafinament pentru a o urmări, dar este scrisă, totuși, pentru începători.
+Am căpătat multe din următoarea carte:
+•	Robert Goldblatt, Topoi, the Categorial Analysis of Logic. Disponibilă și la Dover Publications.
+Nu vă speriați de titlu: începe cu începutul și explică categoriile înainte de a trece la topoi și la relația lor cu logica. De fapt, mulți toposofi se plâng că nu este suficient de substanțială - arată cum topoi iluminează concepte din logică, dar nu arată că puteți face o mulțime de lucruri interesante cu topoi. Dar pentru începători, probabil că este numai bună!
+Când vreți să săpați mai adânc, încercați asta:
+•	Tom Leinster, An informal introduction to topos theory.
+Este un „text expozitiv scurt pentru cititorii care sunt încrezători în teoria categoriilor de bază, dar știu puțin sau nimic despre toposuri”. Apoi încercați asta:
+•	Saunders Mac Lane și Ieke Moerdijk, Sheaves in Geometry and Logic: a First Introduction to Topos Theory, Springer, New York, 1992.
+sau asta:
+•	Colin McLarty, Elementary Categories, Elementary Toposes, Clarendon Press, Oxford, 1995.
+Cartea lui Mac Lane și Moerdijk este atât amplă, cât și profundă, explicând în detaliu modul în care teoria toposului unifică logica și geometria. McLarty's este mai scurt, mai laconic și concentrat puternic pe logică. Dacă doriți să-l auziți pe McLarty vorbind într-un mod mai puțin tehnic despre imaginea de ansamblu a teoriei toposului, vă recomand cu căldură această lucrare:
+•	Colin McLarty, The uses and abuses of the history of topos theory, Brit. J. Phil. Sci. 41 (1990), 351–375.
+El se plânge de percepția greșită, comună printre logicieni, că teoria toposului a apărut ca o încercare de a generaliza teoria mulțimilor:
+Teoria categoriilor a apărut dintr-o serie complicată de probleme practice în topologie. Teoria toposului a apărut din lucrările lui Grothendieck în geometrie, din interesul lui Tierney pentru topologie și interesul lui Lawvere pentru fundamentele fizicii. Cele două subiecte sunt tipice în acest sens. Un concept matematic important va apărea rar din generalizarea unui concept anterior. Mai des, va apărea din încercările de a unifica, explica sau trata o masă de concepte și probleme anterioare. Devine important pentru că ușurează lucrurile, astfel încât o abordare istorică precisă să înceapă din cel mai greu punct. Voi schița o istorie mai precisă a categoriilor și toposurilor și voi arăta câteva moduri în care istoria bunului simț le ascunde conținutul și mai ales ascunde fundamentele categorice ale matematicii. Cu toate acestea, mă îndoiesc că istoria mai precisă îi va ajuta pe începători să învețe teoria categoriilor. Închei cu o istorie mai larg falsificată care ar putea ajuta la introducerea subiectului.
+Și după aceea... ei bine, să nu ne grăbim cu asta! De exemplu, acest clasic este acum disponibil gratuit online:
+•	Michael Barr și Charles Wells, Toposes, Triples and Theories.
+dar este suficient de avansat pentru a face orice începător să fugă țipând! Îmi place acum, dar mi-a luat ani de zile.
+Aceste cărți ar trebui să aibă un efect similar: 
+•	Peter Johnstone, Topos Theory, London Mathematical Society Monographs 10, Academic Press, 1977.
+•	Peter Johnstone, Sketches of an Elephant: a Topos Theory Compendium, Oxford U. Press, Oxford. Volumul 1, cuprinzând Partea A: Toposurile ca și categorii și Partea B: 2- Aspecte categorice ale Teoriei Toposului, 720 de pagini, publicat în 2002. Volumul 2, cuprinzând Partea C: Toposurile ca Spații și Partea D: Toposurile ca Teorii, 880 pagini, publicat în 2002. Volumul 3, cuprinzând Partea E: Homotopie și Cohomologie (Cohomology) și Partea F: Toposurile ca Universuri Matematice, în pregătire. 
+... dar odată ce ați săpat mai adânc în teoria toposului, veți vedea că acestea conțin un tezaur masiv de înțelepciune. Încerc să le citesc acum. McLarty a spus că poți spune că înțelegi cu adevărat topoi dacă poți urma Teoria clasică a Toposului a lui Johnstone. A fost mult timp textul cheie despre acest subiect, dar așa cum a scris un critic al noii sale trilogii, a fost „mult prea greu de citit și nu pentru cei slabi de inimă”. Lucrarea sa, Sketches of an Elephant, petrece mai mult timp explicând lucrurile, dar este atât de plină de informații detaliate, încât nimeni care nu este familiarizat cu teoria toposului nu ar avea șansa să vadă pădurea de copaci. De asemenea, asumă o cantitate destul de mare din teoria categoriilor. Dar este grozavă!
+Matematica nu este schema rigidă și generatoare de rigiditate pe care o crede profanul că este; mai degrabă, în ea ne aflăm în acel punct de întâlnire al constrângerii și libertății care este însăși esența naturii umane. — Hermann Weyl
+© 2021 John Baez
+baez@math.removethis.ucr.andthis.edu
+home
